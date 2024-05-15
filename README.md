@@ -1,20 +1,31 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Infra Specialist Laptop Provisioning Script
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Introduction
+This PowerShell script is designed to automate the setup of a new InfraSpecialist laptop. It can install a predefined list of software packages, Visual Studio Code extensions, additional PowerShell modules, and apply extra security configurations. The script leverages Chocolatey, a package manager for Windows, to handle software installations.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Features
+- **Software Installation**: Installs a set of default software packages using Chocolatey.
+- **VS Code Extensions**: Installs predefined Visual Studio Code extensions.
+- **Azure Tools**: Optional installation of Azure-related tools for development.
+- **PowerShell Modules**: Installs additional PowerShell modules that can be useful for various tasks.
+- **Extra Security Options**: Applies security settings such as disabling PowerShell 2.0 and the Windows Script Host, and configuring system restore point frequency.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Requirements
+- **Windows PowerShell**: Must be run with PowerShell.
+- **Administrative Privileges**: Requires administrative rights to execute.
+- **Internet Connection**: Needed to download packages and scripts.
+- **Chocolatey**: The script checks for Chocolatey and offers to install it if not present.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Usage
+
+To use this script, you can either clone this repository or copy the script into a PowerShell file locally. 
+
+1. **open script**, edit the $config variable on line 144 to select what you want to install. 
+2. **save and close script**
+3. **Open PowerShell as Administrator**: Right-click PowerShell and select "Run as administrator".
+4. **Execute the Script**:
+   ```powershell
+   # Navigate to the directory containing the script
+   cd path\to\script
+   # Execute the script
+   .\provision-computer.ps1
