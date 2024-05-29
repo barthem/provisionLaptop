@@ -65,7 +65,9 @@ function provision-computer {
                 "wireshark",
                 "spotify",
                 "jabra-direct",
-                "mremoteng"
+                "mremoteng",
+                "github-desktop"
+
             )
         }
         # Add Azure tools if the flag is set.
