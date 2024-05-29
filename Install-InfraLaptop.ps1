@@ -59,7 +59,6 @@ function provision-computer {
                 "openhardwaremonitor",
                 "putty.install",
                 "sysinternals",
-                "treesizefree",
                 "vlc",
                 "vscode",
                 "vscode.install",
