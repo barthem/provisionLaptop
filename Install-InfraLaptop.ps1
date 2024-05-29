@@ -47,6 +47,7 @@ function provision-computer {
                 "7zip",
                 "7zip.install",
                 "powershell-core",
+                "python"
                 "filezilla",
                 "firefox",
                 "git",
