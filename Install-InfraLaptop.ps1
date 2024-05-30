@@ -52,7 +52,6 @@ function provision-computer {
                 "firefox",
                 "git",
                 "googlechrome",
-                "lockhunter",
                 "nmap",
                 "notepadplusplus",
                 "notepadplusplus.install",
