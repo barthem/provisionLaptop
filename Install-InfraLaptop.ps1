@@ -65,7 +65,8 @@ function provision-computer {
                 "spotify",
                 "jabra-direct",
                 "mremoteng",
-                "github-desktop"
+                "github-desktop",
+                "xampp-81"
 
             )
         }
